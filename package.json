@@ -6,12 +6,14 @@
   "scripts": {
     "init-all": "npm-run-all install:*",
     "install:base": "cd vue-base && npm install",
-    "install:one": "cd vue-one && npm install",
-    "install:two": "cd vue-two && npm install",
+    "install:vue": "cd vue-app && npm install",
+    "install:react": "cd react-app && yarn",
+    "install:vite": "cd vite-app && npm install",
     "start-all": "npm-run-all --parallel start:*",
     "start:base": "cd vue-base && npm run serve",
-    "start:one": "cd vue-one && npm run serve:one",
-    "start:two": "cd vue-two && npm run serve:two"
+    "start:vue": "cd vue-app && npm run vue",
+    "start:react": "cd react-app && npm run react",
+    "start:vite": "cd vite-app && npm run vite"
   },
   "repository": {
     "type": "git",
